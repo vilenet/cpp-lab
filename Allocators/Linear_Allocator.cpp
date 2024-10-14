@@ -21,7 +21,7 @@ public:
         if (other.m_buffer) {
             m_buffer = static_cast<char*>(::operator new(m_size));  // Re-allocate memory
             std::memcpy(m_buffer, other.m_buffer, m_size);          // Copy the contents of memory
-        } 
+        }
         else {
             m_buffer = nullptr;
         }
